@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'UniversNextProHeavyExt';
+    src: url('fonts/UniversNextProHeavyExt.eot');
+    src: url('fonts/UniversNextProHeavyExt.eot') format('embedded-opentype'),
+         url('fonts/UniversNextProHeavyExt.woff2') format('woff2'),
+         url('fonts/UniversNextProHeavyExt.woff') format('woff'),
+         url('fonts/UniversNextProHeavyExt.ttf') format('truetype'),
+         url('fonts/UniversNextProHeavyExt.svg#UniversNextProHeavyExt') format('svg');
+}
+
+
+body {
+  background-color: #ebe8e2;
+  min-height: 100vh; 
+  color: #424242;
+  
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+
+  perspective: 800px;
+
+  padding: 0;
+    margin: 0;
+    font-family: UniversNextProHeavyExt;
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events:none
+    
+}
+
+h1 {
+      font-size: 23px;
+      color: #424242;
+      letter-spacing: 0.03rem
+      
+}
+
+.sub {
+  -webkit-text-stroke-width: 0.03rem;
+  -webkit-text-stroke-color: #424242;
+  color: rgb(235 232 226 / 0%);
+}
+
+.radial-gradient {
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  
+  /*Fallback if gradeints don't work */
+  background: #ebe8e2;
+  /*Linear gradient... */
+  background: 
+    radial-gradient(
+     at center, rgba(97,114,169,0.2), rgba(170,151,26,0.2), rgba(213,93,22,0.2)
+    );
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
