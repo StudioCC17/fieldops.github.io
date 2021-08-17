@@ -75,7 +75,5 @@ a {
 }
 
 a:hover {
-    -webkit-text-stroke-width: 0.03rem;
-  -webkit-text-stroke-color: #424242;
-  color: rgb(235 232 226 / 0%);
+
 }
